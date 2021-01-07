@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+.row{
+  width: 100%;
+}
+.row > p {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.row div{
+    float: left;
+    margin-bottom: 30px;
+}
+section{
+	width: 90%;
+    background-color: #8E8E95;
+    margin: 0 auto;
+	border:solid 2px black;
+	height: auto;
+}
+section > p{
+	padding: 10px;
+    clear: both;
+}
+.title{
+	margin: 0px;
+	padding: 10px 40px 10px 40px;
+	float: right;
+	text-align: center;
+	border:solid  2px ;
+	width: auto;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: red;
+}
+.chicken{background: #E17560;}
+.beef{background:#96220C;}
+.sushi{background:#F9E05C;}
+
+@media (max-width: 767px){
+ .col-sm-12{width: 100%; float: left; }
+}
+@media (min-width: 768px) and (max-width: 991px){
+ .col-md-6,.col-md-12{float: left ; }
+ .col-md-6{width: 50%}
+ .col-md-12{width: 100%}
+ .col-md-12 section{width: 95%;}
+}
+@media(min-width: 992px){
+ .col-lg-4{float:left; width: 33.33%;}
+}
